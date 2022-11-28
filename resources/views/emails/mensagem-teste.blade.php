@@ -4,7 +4,7 @@
 Eai linda(o)
 
 <x-mail::button :url="''">
-Alo
+Tomar no cu
 </x-mail::button>
 
 Obrigado,<br>
