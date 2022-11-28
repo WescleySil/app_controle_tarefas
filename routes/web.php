@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\MensagemTesteMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('tarefa', 'App\Http\Controllers\TarefaController');
+
+Route::get('/msg', function(){
+    return new MensagemTesteMail();
+   /*  Mail::to('11dedeco@gmail.com')->send(new MensagemTesteMail());
+    return "email enviado"; */
+});
